@@ -27,9 +27,9 @@ const timerHardware_t timerHardware[] = {
     { TIM3, IO_TAG(PA7),    TIM_Channel_2, 1, IOCFG_AF_PP_PD, GPIO_AF_TIM3, TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR },  // Motor
     { TIM4, IO_TAG(PB8),    TIM_Channel_3, 1, IOCFG_AF_PP_PD, GPIO_AF_TIM4, TIM_USE_MC_MOTOR | TIM_USE_FW_SERVO },  // Motor
     { TIM3, IO_TAG(PB1),    TIM_Channel_4, 1, IOCFG_AF_PP_PD, GPIO_AF_TIM3, TIM_USE_MC_MOTOR | TIM_USE_FW_SERVO },  // Motor
-    // { TIM2, IO_TAG(PB3),    TIM_Channel_2, 1, IOCFG_AF_PP_PD, GPIO_AF_TIM2, TIM_USE_MC_SERVO | TIM_USE_FW_SERVO },  //S5
-    // { TIM2, IO_TAG(PB10),   TIM_Channel_3, 1, IOCFG_AF_PP_PD, GPIO_AF_TIM2, TIM_USE_MC_SERVO | TIM_USE_FW_SERVO },  //S6
-    // { TIM2, IO_TAG(PA15),   TIM_Channel_1, 1, IOCFG_AF_PP_PD, GPIO_AF_TIM2, TIM_USE_MC_CHNFW | TIM_USE_FW_SERVO },  //S7
+
+    { TIM9, IO_TAG(PA2),    TIM_Channel_1, 1, IOCFG_AF_PP_PD, GPIO_AF_TIM2, TIM_USE_ANY },  // Extra
+    { TIM9, IO_TAG(PA3),    TIM_Channel_2, 1, IOCFG_AF_PP_PD, GPIO_AF_TIM2, TIM_USE_ANY },  // Extra
 
     { TIM2, IO_TAG(PA0),    TIM_Channel_1, 1, IOCFG_AF_PP_PD, GPIO_AF_TIM2, TIM_USE_LED},   // 2812LED -- changed
     { TIM2, IO_TAG(PB10),   TIM_Channel_3, 0, IOCFG_AF_PP_PD, GPIO_AF_TIM2, TIM_USE_PPM },  //use rssi pad for PPM/softserial_tx1 -- changed

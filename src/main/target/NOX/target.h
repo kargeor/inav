@@ -26,7 +26,7 @@
 #define BEEPER                  PC13
 #define BEEPER_INVERTED
 
-// *************** Gyro & ACC **********************
+// *************** SPI Sensors **********************
 #define USE_SPI
 
 #define USE_SPI_DEVICE_1
@@ -52,6 +52,12 @@
 #define MPU6000_SPI_BUS BUS_SPI2
 #define MPU6000_CS_PIN PB12
 
+#define USE_BARO
+#define USE_BARO_BMP280
+#define USE_BARO_SPI_BMP280
+
+#define BMP280_SPI_BUS BUS_SPI2
+#define BMP280_CS_PIN PA9
 
 // *************** OSD *****************************
 
@@ -91,11 +97,6 @@
 // HACK!
 #define I2C2_SDA PB10
 
-///#define USE_BARO
-// #define BARO_I2C_BUS            BUS_I2C1
-///#define USE_BARO_BMP280
-// #define USE_BARO_MS5611
-// #define USE_BARO_BMP085
 
 // #define USE_MAG
 // #define MAG_I2C_BUS             BUS_I2C1
